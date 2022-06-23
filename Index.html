@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Apod Picker</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  	<link rel="stylesheet" href="style.css">
+</head>
+<body class="text-center text-white bg-black">
+	<header>
+		<img src="assets/nasapng.png" style="max-height: 60px;">
+	</header>
+	<main class="px-3" style="padding-top: 30px; background-size: 100% 100%;">
+		<div class="container-fluid p-5 text-white text-center" style="background-image: url('assets/galaxy-night-landscape.jpg'); background-size: 100%;">
+			<h1>Astronomy Picture of The Day</h1>
+			<h6>Get to know about astronomy pictures taken by NASA day by day</h6>
+			<p style="opacity: 50%;">This website created to finish my final project in FGA Academy JavaScript with API</p>
+		</div>
+		<div class="container-fluid">
+			<p style="color: white;">Pick The Date Here</p>
+			<input type="date" class="dateApod" id="inputDate"><br><br>
+			<button onclick="pickApod()" class="btn1">Search</button><br><br>
+		</div>
+		<div class="container-fluid" style="margin-bottom:50px">
+			<img id="imgApod" src="assets/Ngc6188_Robertson_2000.jpg" style="max-width: 100%; border-radius: 8px;" /><br><br>
+			<h5 id='aut'>Shaun Robertson</h5>
+			<h6 id='dateApod'>2022-06-07</h6>
+			<p id='explain'>Do dragons fight on the altar of the sky? Although it might appear that way, these dragons are illusions made of thin gas and dust. The emission nebula NGC 6188, home to the glowing clouds, is found about 4,000 light years away near the edge of a large molecular cloud unseen at visible wavelengths, in the southern constellation Ara (the Altar). Massive, young stars of the embedded Ara OB1 association were formed in that region only a few million years ago, sculpting the dark shapes and powering the nebular glow with stellar winds and intense ultraviolet radiation. The recent star formation itself was likely triggered by winds and supernova explosions, from previous generations of massive stars, that swept up and compressed the molecular gas. Joining NGC 6188 on this cosmic canvas, visible toward the lower right, is rare emission nebula NGC 6164, also created by one of the region's massive O-type stars. Similar in appearance to many planetary nebulae, NGC 6164's striking, symmetric gaseous shroud and faint halo surround its bright central star near the bottom edge. This impressively wide field of view spans over 2 degrees (four full Moons), corresponding to over 150 light years at the estimated distance of NGC 6188.</p>
+			<p>(̶◉͛‿◉̶)</p>
+		</div>
+	</main>
+	<footer class="" style="margin-bottom: 10px; margin-top: 40px;">
+		<p>This website made by <span style="font-weight: bold;">Alfadin Hz</span></p>
+		<p>Content inspired by <span style="font-weight: bold;">NASA</span></p>
+	</footer>
+	<script src="script.js"></script>
+</body>
+</html>
